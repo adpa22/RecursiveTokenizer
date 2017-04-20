@@ -1,0 +1,20 @@
+We tested this program multiple ways.
+
+1) One file that contained an essay, and the output was successful; all words were in order, and so were occurences
+
+2) A folder with files that had different names, but all contained the same word with the same occurance. The sort by the file name was correct.
+
+3) A folder that had other folders and files. The program correctly traversed through the directory and had everything in order
+
+
+
+Error checking:
+
+4) Passed something that was not in the directory as the second argument, we printed error and exited
+
+5) Passed just a path ("example/") as the first argument, printed error and exited. Note "example/ex" would work since you specify a output name (ex)
+
+6) Passed an invalid path as the first argument. We checked if the path actually existed or not, and if it didn't, we printed error and exited. 
+
+7) Passed a name as the first argument. If that name already exists, we ask them if they want to overwrite it or not, and then proceed to do as user asks
+
